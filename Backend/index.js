@@ -31,7 +31,7 @@ connectDb()
 
 //Starting the server
 const port=process.env.PORT
-app.listen(port,"localhost",()=>{
-    console.log(`app is running on http://localhost:${port}`);
+app.listen(port,"0.0.0.0",()=>{
+    console.log(`app is running on port${port}`);
     
 })
