@@ -43,7 +43,7 @@ export const createApplication = async (req, res) => {
     const data = req.body;
 
     if (req.file) {
-      data.resume = req.file.path;
+      data.resumeUrl = req.file.path;
     }
 
     const newApplication = new applicationModel(data);

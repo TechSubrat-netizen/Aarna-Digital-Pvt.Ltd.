@@ -56,15 +56,5 @@ const applicationSchema = new mongoose.Schema(
       required: true
     },
 
-    coverLetter: {
-      type: String,
-      trim: true
-    },
-
-    status: {
-      type: String,
-      enum: ["Pending", "Reviewed", "Shortlisted", "Rejected", "Hired"],
-      default: "Pending"
-    }
   }, { timestamps: true });
 export default applicationSchema
